@@ -1,0 +1,38 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: #FFDAB9;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+	margin: 0px;
+	color: #A0522D;
+}
+
+.header {
+	border-bottom: 2px solid #A0522D;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+}
+
+.logo {
+	width: 70px;
+}
+
+#log-button {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: #2b2d42;
+	background: linear-gradient(45deg, white, #F08080);
+	cursor: pointer;
+}
+
+#log-button: hover {
+	background: linear-gradient(45deg, #F08080, white);
+}
