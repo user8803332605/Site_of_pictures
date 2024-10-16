@@ -36,3 +36,30 @@ h1 {
 #log-button: hover {
 	background: linear-gradient(45deg, #F08080, white);
 }
+
+.nav-item {
+    position: relative;
+    height: 100%; 
+}
+
+.nav-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    display: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu-link {
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover {
+    color: #007BFF;
+}

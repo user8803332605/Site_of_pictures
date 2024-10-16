@@ -5,4 +5,22 @@ document.addEventListener("DOMContentLoaded", function() {
               document.getElementById('header-placeholder').innerHTML = data;
               initializeHeader();
           });
+
    });
+function initializeHeader() {
+    const navLinkNav = document.getElementById('nav-link-nav');
+    const navMenu = document.getElementById('nav-menu');
+    const navLinkAbout = document.getElementById('nav-link-about');
+
+    navLinkNav.addEventListener('click', function(e) {
+        e.preventDefault();
+        navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Скрытие меню при клике вне его области
+    document.addEventListener('click', function(e) {
+        if (!navLinkNav.contains(e.target) && !navMenu.contains(e.target)) {
+            navMenu.style.display = 'none';
+        }
+    });
+}
