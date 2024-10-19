@@ -1,18 +1,18 @@
 body {
     font-family: "Comic Sans MS", sans-serif;
-    background-color: #FFDAB9;
-    color: #fff;
+    background-color: #FFEBCD;
+    color: #A52A2A;
     margin: 0;
     padding: 0;
 }
 
 h1 {
 	margin: 0px;
-	color: #A0522D;
+	color: #A52A2A;
 }
 
 .header {
-	border-bottom: 2px solid #A0522D;
+	border-bottom: 2px solid #A52A2A;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
@@ -40,26 +40,35 @@ h1 {
 .nav-item {
     position: relative;
     height: 100%; 
+    text-decoration: none;
 }
 
 .nav-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #FFDAB9;
+    border: 1px solid #FFE4E1;
     display: none;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .nav-menu-link {
-    display: block;
+    display: flex;
     margin-bottom: 5px;
-    color: #333;
+    color: #A52A2A;
     text-decoration: none;
 }
 
 .nav-menu-link:hover {
     color: #007BFF;
+}
+.footer {
+     background-color: #FFDAB9;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
 }
