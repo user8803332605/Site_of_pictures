@@ -28,7 +28,7 @@ h1 {
 	border: none;
 	padding: 10px 20px;
 	border-radius: 20px;
-	color: #2b2d42;
+	color: #A52A2A;
 	background: linear-gradient(45deg, white, #F08080);
 	cursor: pointer;
 }
@@ -40,7 +40,8 @@ h1 {
 .nav-item {
     position: relative;
     height: 100%; 
-    text-decoration: none;
+}
+
 }
 
 .nav-menu {
@@ -49,6 +50,7 @@ h1 {
     left: 0;
     background-color: #FFDAB9;
     border: 1px solid #FFE4E1;
+    border-radius: 20px;
     display: none;
     padding: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -64,6 +66,44 @@ h1 {
 .nav-menu-link:hover {
     color: #007BFF;
 }
+
+.pikchi {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.pikcha {
+    background-color: #FFDAB9;
+    padding: 15px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.pikcha:hover {
+         transform: scale(1.05);
+}
+
+.pct_of_content {
+    width: 250px;
+}
+
+.pct_btn {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #4682B4;
+    background: linear-gradient(45deg, white, #B0C4DE);
+    cursor: pointer;
+}
+
+.pct_btn:hover {
+    background: linear-gradient(45deg, #B0C4DE, white);
+}
+
 .footer {
      background-color: #FFDAB9;
     text-align: center;

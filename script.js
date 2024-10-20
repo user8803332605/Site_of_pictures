@@ -25,16 +25,26 @@ function initializeHeader() {
     });
 }
 
-let pen = 111111;
+// let pen = 111111;
 
-function message() {
-  const buy = document.getElementById('buy');
-  buy.addEventListener('click', function(e) {
-    e.preventDefault();
-    // alert('привяжите карту');
-    pen = pen + 729;
-    console.log(pen);
-     buy.style.color = '#' + pen;
-  });
+// function message() {
+//   const buy = document.getElementById('buy');
+//   buy.addEventListener('click', function(e) {
+//     e.preventDefault();
+//     // alert('привяжите карту');
+//     pen = pen + 729;
+//     console.log(pen);
+//      buy.style.color = '#' + pen;
+//   });
 
-}
+// }
+
+document.addEventListener("DOMContentLoaded", function() {
+      fetch('pikchi.html')
+          .then(response => response.text())
+          .then(data => {
+              document.getElementById('pikchi-placeholder').innerHTML = data;
+              initializeMain();
+          });
+
+   });
