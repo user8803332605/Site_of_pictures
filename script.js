@@ -10,8 +10,17 @@ document.addEventListener("DOMContentLoaded", function() {
 function initializeHeader() {
     const navLinkNav = document.getElementById('nav-link-nav');
     const navMenu = document.getElementById('nav-menu');
+    const setMenu = document.getElementById('set-menu');
     const navLinkAbout = document.getElementById('nav-link-about');
+    const setting = document.getElementById('setting');
+    navMenu.style.display = 'none';
+    setMenu.style.display = 'none';
 
+    setting.addEventListener('click', function(e) {
+      e.preventDefault();
+      navMenu.style.display = 'none';
+      setMenu.style.display = 'block';
+    })
     navLinkNav.addEventListener('click', function(e) {
         e.preventDefault();
         navMenu.style.display = navMenu.style.display === 'block' ? 'none' : 'block';
@@ -44,7 +53,8 @@ document.addEventListener("DOMContentLoaded", function() {
           .then(response => response.text())
           .then(data => {
               document.getElementById('pikchi-placeholder').innerHTML = data;
-              initializeMain();
+              // initializeMain();
           });
 
    });
+

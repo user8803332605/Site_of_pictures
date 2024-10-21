@@ -44,7 +44,7 @@ h1 {
 
 }
 
-.nav-menu {
+.nav-menu, .set-menu {
     position: absolute;
     top: 100%;
     left: 0;
@@ -66,6 +66,8 @@ h1 {
 .nav-menu-link:hover {
     color: #007BFF;
 }
+
+
 
 .pikchi {
     display: grid;
