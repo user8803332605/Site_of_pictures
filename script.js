@@ -5,7 +5,7 @@ document.addEventListener("DOMContentLoaded", function() {
               document.getElementById('header-placeholder').innerHTML = data;
               initializeHeader();
           });
-      fetch('pikchis.html')
+      fetch('pikchi.html')
         .then(response => response.text())
         .then(data => {
             document.getElementById('pikchi-placeholder').innerHTML = data;
@@ -61,7 +61,7 @@ function initializeHeader() {
 }
 
 function initializeProducts() {
-    fetch('products.json')
+    fetch('pct.json')
         .then(response => response.json())
         .then(products => {
             const productContainer = document.getElementById('product-container');
@@ -75,31 +75,30 @@ function initializeProducts() {
 
 function createProductCard(product) {
     const cardDiv = document.createElement('div');
-    cardDiv.classList.add('product-card');
+    cardDiv.classList.add('pikcha');
 
     const img = document.createElement('img');
     img.src = product.image;
     img.alt = product.name;
-    img.classList.add('product-image');
+    img.classList.add('pct_of_content');
 
-    const name = document.createElement('h2');
-    name.textContent = product.name;
-    name.classList.add('product-name');
+    // const name = document.createElement('h2');
+    // name.textContent = product.name;
+    // name.classList.add('product-name');
 
-    const price = document.createElement('p');
-    price.textContent = product.price;
-    price.classList.add('product-price');
+    const avtor = document.createElement('p');
+    avtor.textContent = product.name;
 
     const button = document.createElement('button');
-    button.textContent = 'View Details';
-    button.classList.add('view-details-button');
+    button.textContent = 'купить';
+    button.classList.add('pct_of_content');
     button.addEventListener('click', function() {
         window.location.href = 'cardPage.html?id=' + product.id;
     });
 
     cardDiv.appendChild(img);
-    cardDiv.appendChild(name);
-    cardDiv.appendChild(price);
+    cardDiv.appendChild(avtor);
+    // cardDiv.appendChild(price);
     cardDiv.appendChild(button);
 
     return cardDiv;
@@ -170,7 +169,7 @@ function displayProductDetails() {
 // }
 
 document.addEventListener("DOMContentLoaded", function() {
-      fetch('pikchis.html')
+      fetch('pikchi.html')
           .then(response => response.text())
           .then(data => {
               document.getElementById('pikchi-placeholder').innerHTML = data;
