@@ -33,15 +33,13 @@ h1 {
 	cursor: pointer;
 }
 
-#log-button: hover {
+#log-button:hover {
 	background: linear-gradient(45deg, #F08080, white);
 }
 
 .nav-item {
     position: relative;
     height: 100%; 
-}
-
 }
 
 .nav-menu, .set-menu {
@@ -113,4 +111,111 @@ h1 {
     position: fixed;
     width: 100%;
     bottom: 0;
+}
+
+.product-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.product-card {
+    background-color: #FFDAB9;
+    border: 1px solid #FFE4E1;
+    border-radius: 10px;
+    width: 250px;
+    margin: 15px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.2s;
+}
+
+.product-card:hover {
+    transform: scale(1.05);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.product-name {
+    color: #A52A2A;
+    margin: 10px 0;
+}
+
+.product-price {
+    color: #4682B4;
+    font-weight: bold;
+}
+
+.view-details-button {
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: #A52A2A;
+    background: linear-gradient(45deg, white, #F08080);
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.view-details-button:hover {
+    background: linear-gradient(45deg, #F08080, white);
+}
+
+/* Product Details Page */
+.product-details {
+    max-width: 800px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.product-image-large {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.product-details h1 {
+    color: #A52A2A;
+    margin-bottom: 20px;
+}
+
+.product-details p {
+    color: #4682B4;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .header {
+    background-color: #333;
+}
+
+body.dark-mode .nav-menu,
+body.dark-mode .set-menu {
+    background-color: #444;
+}
+
+body.dark-mode .nav-menu-link,
+body.dark-mode .set-menu a {
+    color: white;
+}
+
+body.dark-mode #log-button {
+    color: white;
+    background: linear-gradient(45deg, #555, #777);
+}
+
+body.dark-mode .pct_btn {
+    color: white;
+    background: linear-gradient(45deg, #555, #777);
 }

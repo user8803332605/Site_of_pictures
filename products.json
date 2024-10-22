@@ -1,0 +1,23 @@
+[
+    {
+        "id": 1,
+        "name": "Beautiful Landscape",
+        "image": "images/landscape.jpg",
+        "description": "A breathtaking view of the mountains during sunset.",
+        "price": "$25"
+    },
+    {
+        "id": 2,
+        "name": "City Skyline",
+        "image": "images/city.png",
+        "description": "A stunning city skyline at night.",
+        "price": "$30"
+    },
+    {
+        "id": 3,
+        "name": "Forest Path",
+        "image": "images/forest.jpg",
+        "description": "A serene path through a lush forest.",
+        "price": "$20"
+    }
+]
