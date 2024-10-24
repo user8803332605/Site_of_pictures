@@ -1,17 +1,20 @@
 [
     {
-        "id": 1,
-        "name": "автор",
-        "image": "images/pct_for_content/0ebd262c4b7f69f7ec915dbd8509328f.jpg"
+      "id": 1,
+      "name": "Красивая картина",
+      "author": "Автор 1",
+      "image": "images/pct_for_content/0ebd262c4b7f69f7ec915dbd8509328f.jpg"
     },
     {
-        "id": 2,
-        "name": "автор",
-        "image": "images/pct_for_content/1646186638_1-kartinkin-net-p-krasivie-kartinki-oblaka-1.jpg"
+      "id": 2,
+      "name": "Облака",
+      "author": "Автор 2",
+      "image": "images/pct_for_content/1646186638_1-kartinkin-net-p-krasivie-kartinki-oblaka-1.jpg"
     },
     {
-        "id": 3,
-        "name": "автор",
-        "image": "images/pct_for_content/1647653856_1-amiel-club-p-krasivie-kartinki-puteshestviya-1.jpg"
+      "id": 3,
+      "name": "Путешествие",
+      "author": "Автор 3",
+      "image": "images/pct_for_content/1647653856_1-amiel-club-p-krasivie-kartinki-puteshestviya-1.jpg"
     }
 ]
