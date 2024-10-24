@@ -1,0 +1,45 @@
+body {
+    font-family: "Comic Sans MS", sans-serif;
+    background-color: #FFEBCD;
+    color: #A52A2A;
+    margin: 0;
+    padding: 0;
+}
+
+body.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+body.dark-mode .header {
+    background-color: #333;
+}
+
+body.dark-mode .nav-menu,
+body.dark-mode .set-menu {
+    background-color: #444;
+}
+
+body.dark-mode .nav-menu-link,
+body.dark-mode .set-menu a {
+    color: white;
+}
+
+body.dark-mode #log-button {
+    color: white;
+    background: linear-gradient(45deg, #555, #777);
+}
+
+body.dark-mode .pct_btn {
+    color: white;
+    background: linear-gradient(45deg, #555, #777);
+}
+
+.footer {
+     background-color: #FFDAB9;
+    text-align: center;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}

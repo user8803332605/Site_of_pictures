@@ -1,0 +1,59 @@
+h1 {
+	margin: 0px;
+	color: #A52A2A;
+}
+
+.header {
+	border-bottom: 2px solid #A52A2A;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	padding: 20px;
+	align-items: center;
+}
+
+.logo {
+	width: 70px;
+}
+
+#log-button {
+	border: none;
+	padding: 10px 20px;
+	border-radius: 20px;
+	color: #A52A2A;
+	background: linear-gradient(45deg, white, #F08080);
+	cursor: pointer;
+}
+
+#log-button:hover {
+	background: linear-gradient(45deg, #F08080, white);
+}
+
+.nav-item {
+    position: relative;
+    height: 100%; 
+}
+
+.nav-menu, .set-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #FFDAB9;
+    border: 1px solid #FFE4E1;
+    border-radius: 20px;
+    display: none;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.nav-menu-link {
+    display: flex;
+    margin-bottom: 5px;
+    color: #A52A2A;
+    text-decoration: none;
+}
+
+.nav-menu-link:hover {
+    color: #007BFF;
+}
+
